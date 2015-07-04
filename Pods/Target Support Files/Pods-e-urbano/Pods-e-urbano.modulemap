@@ -1,0 +1,6 @@
+framework module Pods_e_urbano {
+  umbrella header "Pods-e-urbano-umbrella.h"
+
+  export *
+  module * { export * }
+}

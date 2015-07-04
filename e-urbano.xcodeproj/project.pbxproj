@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8BFE1B482EC5003E955F /* AppDelegate.swift */; };
+		306C8C011B482EC5003E955F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C001B482EC5003E955F /* FirstViewController.swift */; };
+		306C8C031B482EC5003E955F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C021B482EC5003E955F /* SecondViewController.swift */; };
+		306C8C061B482EC5003E955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C041B482EC5003E955F /* Main.storyboard */; };
+		306C8C081B482EC5003E955F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C071B482EC5003E955F /* Images.xcassets */; };
+		306C8C0B1B482EC5003E955F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C091B482EC5003E955F /* LaunchScreen.xib */; };
+		306C8C171B482EC5003E955F /* e_urbanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C161B482EC5003E955F /* e_urbanoTests.swift */; };
+		A3EB1DCFBD0AE3E2F24303C1 /* Pods_e_urbano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306C8C111B482EC5003E955F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 306C8BF11B482EC5003E955F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306C8BF81B482EC5003E955F;
+			remoteInfo = "e-urbano";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		306C8BF91B482EC5003E955F /* e-urbano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-urbano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		306C8BFD1B482EC5003E955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306C8BFE1B482EC5003E955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		306C8C001B482EC5003E955F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		306C8C021B482EC5003E955F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		306C8C051B482EC5003E955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		306C8C071B482EC5003E955F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		306C8C0A1B482EC5003E955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		306C8C101B482EC5003E955F /* e-urbanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-urbanoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		306C8C151B482EC5003E955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306C8C161B482EC5003E955F /* e_urbanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_urbanoTests.swift; sourceTree = "<group>"; };
+		30BBBA8D1B48313000643062 /* e-urbano-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "e-urbano-Bridging-Header.h"; sourceTree = "<group>"; };
+		3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.debug.xcconfig"; sourceTree = "<group>"; };
+		64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.release.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.release.xcconfig"; sourceTree = "<group>"; };
+		A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_urbano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		306C8BF61B482EC5003E955F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EB1DCFBD0AE3E2F24303C1 /* Pods_e_urbano.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306C8C0D1B482EC5003E955F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		306C8BF01B482EC5003E955F = {
+			isa = PBXGroup;
+			children = (
+				306C8BFB1B482EC5003E955F /* e-urbano */,
+				306C8C131B482EC5003E955F /* e-urbanoTests */,
+				306C8BFA1B482EC5003E955F /* Products */,
+				5B3A04ED89999375FCC713E3 /* Pods */,
+				F89B310B67AF80B89F6E1CC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		306C8BFA1B482EC5003E955F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				306C8BF91B482EC5003E955F /* e-urbano.app */,
+				306C8C101B482EC5003E955F /* e-urbanoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		306C8BFB1B482EC5003E955F /* e-urbano */ = {
+			isa = PBXGroup;
+			children = (
+				306C8BFE1B482EC5003E955F /* AppDelegate.swift */,
+				306C8C001B482EC5003E955F /* FirstViewController.swift */,
+				306C8C021B482EC5003E955F /* SecondViewController.swift */,
+				306C8C041B482EC5003E955F /* Main.storyboard */,
+				306C8C071B482EC5003E955F /* Images.xcassets */,
+				306C8C091B482EC5003E955F /* LaunchScreen.xib */,
+				306C8BFC1B482EC5003E955F /* Supporting Files */,
+				30BBBA8D1B48313000643062 /* e-urbano-Bridging-Header.h */,
+			);
+			path = "e-urbano";
+			sourceTree = "<group>";
+		};
+		306C8BFC1B482EC5003E955F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306C8BFD1B482EC5003E955F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		306C8C131B482EC5003E955F /* e-urbanoTests */ = {
+			isa = PBXGroup;
+			children = (
+				306C8C161B482EC5003E955F /* e_urbanoTests.swift */,
+				306C8C141B482EC5003E955F /* Supporting Files */,
+			);
+			path = "e-urbanoTests";
+			sourceTree = "<group>";
+		};
+		306C8C141B482EC5003E955F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306C8C151B482EC5003E955F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B3A04ED89999375FCC713E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */,
+				64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F89B310B67AF80B89F6E1CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		306C8BF81B482EC5003E955F /* e-urbano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306C8C1A1B482EC5003E955F /* Build configuration list for PBXNativeTarget "e-urbano" */;
+			buildPhases = (
+				0F19DF532B45CB90A4EE4B47 /* Check Pods Manifest.lock */,
+				306C8BF51B482EC5003E955F /* Sources */,
+				306C8BF61B482EC5003E955F /* Frameworks */,
+				306C8BF71B482EC5003E955F /* Resources */,
+				52B1EB94E77DD42C5CE6C0A4 /* Embed Pods Frameworks */,
+				007E36896A253E4B47D4C445 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "e-urbano";
+			productName = "e-urbano";
+			productReference = 306C8BF91B482EC5003E955F /* e-urbano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		306C8C0F1B482EC5003E955F /* e-urbanoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306C8C1D1B482EC5003E955F /* Build configuration list for PBXNativeTarget "e-urbanoTests" */;
+			buildPhases = (
+				306C8C0C1B482EC5003E955F /* Sources */,
+				306C8C0D1B482EC5003E955F /* Frameworks */,
+				306C8C0E1B482EC5003E955F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306C8C121B482EC5003E955F /* PBXTargetDependency */,
+			);
+			name = "e-urbanoTests";
+			productName = "e-urbanoTests";
+			productReference = 306C8C101B482EC5003E955F /* e-urbanoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		306C8BF11B482EC5003E955F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Laboratório de Estudos Urbanos da Unicamp";
+				TargetAttributes = {
+					306C8BF81B482EC5003E955F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					306C8C0F1B482EC5003E955F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 306C8BF81B482EC5003E955F;
+					};
+				};
+			};
+			buildConfigurationList = 306C8BF41B482EC5003E955F /* Build configuration list for PBXProject "e-urbano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 306C8BF01B482EC5003E955F;
+			productRefGroup = 306C8BFA1B482EC5003E955F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				306C8BF81B482EC5003E955F /* e-urbano */,
+				306C8C0F1B482EC5003E955F /* e-urbanoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		306C8BF71B482EC5003E955F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306C8C061B482EC5003E955F /* Main.storyboard in Resources */,
+				306C8C0B1B482EC5003E955F /* LaunchScreen.xib in Resources */,
+				306C8C081B482EC5003E955F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306C8C0E1B482EC5003E955F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		007E36896A253E4B47D4C445 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F19DF532B45CB90A4EE4B47 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52B1EB94E77DD42C5CE6C0A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		306C8BF51B482EC5003E955F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306C8C031B482EC5003E955F /* SecondViewController.swift in Sources */,
+				306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */,
+				306C8C011B482EC5003E955F /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306C8C0C1B482EC5003E955F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306C8C171B482EC5003E955F /* e_urbanoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306C8C121B482EC5003E955F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306C8BF81B482EC5003E955F /* e-urbano */;
+			targetProxy = 306C8C111B482EC5003E955F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		306C8C041B482EC5003E955F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306C8C051B482EC5003E955F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		306C8C091B482EC5003E955F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306C8C0A1B482EC5003E955F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		306C8C181B482EC5003E955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		306C8C191B482EC5003E955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306C8C1B1B482EC5003E955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "e-urbano/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "e-urbano/e-urbano-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		306C8C1C1B482EC5003E955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "e-urbano/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "e-urbano/e-urbano-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		306C8C1E1B482EC5003E955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "e-urbanoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/e-urbano.app/e-urbano";
+			};
+			name = Debug;
+		};
+		306C8C1F1B482EC5003E955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "e-urbanoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/e-urbano.app/e-urbano";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		306C8BF41B482EC5003E955F /* Build configuration list for PBXProject "e-urbano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306C8C181B482EC5003E955F /* Debug */,
+				306C8C191B482EC5003E955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306C8C1A1B482EC5003E955F /* Build configuration list for PBXNativeTarget "e-urbano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306C8C1B1B482EC5003E955F /* Debug */,
+				306C8C1C1B482EC5003E955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306C8C1D1B482EC5003E955F /* Build configuration list for PBXNativeTarget "e-urbanoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306C8C1E1B482EC5003E955F /* Debug */,
+				306C8C1F1B482EC5003E955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 306C8BF11B482EC5003E955F /* Project object */;
+}
