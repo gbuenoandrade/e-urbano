@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8BFE1B482EC5003E955F /* AppDelegate.swift */; };
-		306C8C011B482EC5003E955F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C001B482EC5003E955F /* FirstViewController.swift */; };
-		306C8C031B482EC5003E955F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C021B482EC5003E955F /* SecondViewController.swift */; };
 		306C8C061B482EC5003E955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C041B482EC5003E955F /* Main.storyboard */; };
 		306C8C081B482EC5003E955F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C071B482EC5003E955F /* Images.xcassets */; };
 		306C8C0B1B482EC5003E955F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C091B482EC5003E955F /* LaunchScreen.xib */; };
 		306C8C171B482EC5003E955F /* e_urbanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8C161B482EC5003E955F /* e_urbanoTests.swift */; };
+		30BBBA941B483E4700643062 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA931B483E4700643062 /* LoginVC.swift */; };
+		30BBBA961B4849B600643062 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA951B4849B600643062 /* RegisterVC.swift */; };
+		30BBBA981B484A3000643062 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */; };
+		30BBBA9A1B485C1B00643062 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA991B485C1B00643062 /* Database.swift */; };
+		30BBBA9C1B48760D00643062 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA9B1B48760D00643062 /* HomeVC.swift */; };
+		30FDDE601B487F8500FD1FF5 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */; };
+		30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */; };
 		A3EB1DCFBD0AE3E2F24303C1 /* Pods_e_urbano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,8 +36,6 @@
 		306C8BF91B482EC5003E955F /* e-urbano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-urbano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		306C8BFD1B482EC5003E955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306C8BFE1B482EC5003E955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		306C8C001B482EC5003E955F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		306C8C021B482EC5003E955F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		306C8C051B482EC5003E955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		306C8C071B482EC5003E955F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		306C8C0A1B482EC5003E955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -40,6 +43,13 @@
 		306C8C151B482EC5003E955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306C8C161B482EC5003E955F /* e_urbanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_urbanoTests.swift; sourceTree = "<group>"; };
 		30BBBA8D1B48313000643062 /* e-urbano-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "e-urbano-Bridging-Header.h"; sourceTree = "<group>"; };
+		30BBBA931B483E4700643062 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		30BBBA951B4849B600643062 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		30BBBA991B485C1B00643062 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		30BBBA9B1B48760D00643062 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHistoriesVC.swift; sourceTree = "<group>"; };
 		3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.debug.xcconfig"; sourceTree = "<group>"; };
 		64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.release.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.release.xcconfig"; sourceTree = "<group>"; };
 		A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_urbano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,9 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				306C8BFE1B482EC5003E955F /* AppDelegate.swift */,
-				306C8C001B482EC5003E955F /* FirstViewController.swift */,
-				306C8C021B482EC5003E955F /* SecondViewController.swift */,
+				30BBBA931B483E4700643062 /* LoginVC.swift */,
 				306C8C041B482EC5003E955F /* Main.storyboard */,
+				30BBBA991B485C1B00643062 /* Database.swift */,
+				30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */,
+				30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */,
+				30BBBA9B1B48760D00643062 /* HomeVC.swift */,
+				30BBBA951B4849B600643062 /* RegisterVC.swift */,
+				30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */,
 				306C8C071B482EC5003E955F /* Images.xcassets */,
 				306C8C091B482EC5003E955F /* LaunchScreen.xib */,
 				306C8BFC1B482EC5003E955F /* Supporting Files */,
@@ -292,9 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306C8C031B482EC5003E955F /* SecondViewController.swift in Sources */,
 				306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */,
-				306C8C011B482EC5003E955F /* FirstViewController.swift in Sources */,
+				30BBBA981B484A3000643062 /* UIViewControllerExtension.swift in Sources */,
+				30BBBA941B483E4700643062 /* LoginVC.swift in Sources */,
+				30BBBA9C1B48760D00643062 /* HomeVC.swift in Sources */,
+				30FDDE601B487F8500FD1FF5 /* MapVC.swift in Sources */,
+				30BBBA9A1B485C1B00643062 /* Database.swift in Sources */,
+				30BBBA961B4849B600643062 /* RegisterVC.swift in Sources */,
+				30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
