@@ -7,7 +7,24 @@
 //
 
 import UIKit
+import Parse
 
 class MyHistories: UIViewController {
+
+	@IBOutlet weak var historiesAuthorLabel: UILabel!
 	
+	override func viewWillAppear(animated: Bool) {
+		updateHistoriesAuthor()
+	}
+	
+	func updateHistoriesAuthor() {
+		var newAuthor: String?
+		Util.runClosuresOnBackgroundAndMain({ () -> Void in
+			newAuthor = Database.getNameOfCurrentUser()
+		}, mainClosure: { () -> Void in
+			if newAuthor != nil {
+				self.historiesAuthorLabel.text = "Histórias de " + newAuthor!
+			}
+		})
+	}
 }

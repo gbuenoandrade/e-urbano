@@ -26,11 +26,10 @@ class Database {
 		if let user = user {
 			let query = PFQuery(className: "UserIdentification")
 			query.whereKey("username", equalTo: user.username!)
-			let userIdentification: PFObject? = query.findObjects()?.first as? PFObject
+			let objectsArray: [PFObject]? = query.findObjects() as? [PFObject]
+			let userIdentification = objectsArray?.first
 			if userIdentification != nil {
-				if let name = userIdentification?["name"] as? String {
-					return name
-				}
+				return userIdentification?["name"] as? String
 			}
 		}
 		return nil
