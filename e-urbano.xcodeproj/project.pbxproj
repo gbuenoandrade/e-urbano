@@ -19,6 +19,7 @@
 		30BBBA9C1B48760D00643062 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BBBA9B1B48760D00643062 /* HomeVC.swift */; };
 		30FDDE601B487F8500FD1FF5 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */; };
 		30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */; };
+		30FDDE661B48822900FD1FF5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE651B48822900FD1FF5 /* SettingsVC.swift */; };
 		A3EB1DCFBD0AE3E2F24303C1 /* Pods_e_urbano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		30BBBA9B1B48760D00643062 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHistoriesVC.swift; sourceTree = "<group>"; };
+		30FDDE651B48822900FD1FF5 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.debug.xcconfig"; sourceTree = "<group>"; };
 		64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.release.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.release.xcconfig"; sourceTree = "<group>"; };
 		A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_urbano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,14 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				306C8BFE1B482EC5003E955F /* AppDelegate.swift */,
-				30BBBA931B483E4700643062 /* LoginVC.swift */,
+				30FDDE631B4881B200FD1FF5 /* ViewControllers */,
 				306C8C041B482EC5003E955F /* Main.storyboard */,
-				30BBBA991B485C1B00643062 /* Database.swift */,
-				30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */,
-				30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */,
-				30BBBA9B1B48760D00643062 /* HomeVC.swift */,
-				30BBBA951B4849B600643062 /* RegisterVC.swift */,
-				30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */,
+				30FDDE641B4881BE00FD1FF5 /* Model */,
 				306C8C071B482EC5003E955F /* Images.xcassets */,
 				306C8C091B482EC5003E955F /* LaunchScreen.xib */,
 				306C8BFC1B482EC5003E955F /* Supporting Files */,
@@ -137,6 +134,28 @@
 				306C8C151B482EC5003E955F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30FDDE631B4881B200FD1FF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30BBBA931B483E4700643062 /* LoginVC.swift */,
+				30FDDE651B48822900FD1FF5 /* SettingsVC.swift */,
+				30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */,
+				30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */,
+				30BBBA9B1B48760D00643062 /* HomeVC.swift */,
+				30BBBA951B4849B600643062 /* RegisterVC.swift */,
+				30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30FDDE641B4881BE00FD1FF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30BBBA991B485C1B00643062 /* Database.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		5B3A04ED89999375FCC713E3 /* Pods */ = {
@@ -315,6 +334,7 @@
 				30BBBA9A1B485C1B00643062 /* Database.swift in Sources */,
 				30BBBA961B4849B600643062 /* RegisterVC.swift in Sources */,
 				30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */,
+				30FDDE661B48822900FD1FF5 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,8 +16,8 @@ class RegisterVC: UIViewController {
 	@IBOutlet weak var usernameTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	
-	let tabBarControllerSegue = "LoginSuccesful"
-
+	var parentVC: LoginVC?
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -38,13 +38,13 @@ class RegisterVC: UIViewController {
 		user.signUpInBackgroundWithBlock { (succeeded, error) -> Void in
 			if succeeded {
 				Database.setNameForCurrentUser(self.nameTextField.text)
-				self.dismissViewControllerAnimated(false, completion: { () -> Void in
-					self.performSegueWithIdentifier(self.tabBarControllerSegue, sender: nil)
-				})
+				self.parentVC!.setAlreadyLoggedInToTrue()
+				self.dismissViewControllerAnimated(false, completion:nil)
 			}
 			else if let error = error {
 				self.showErrorView(error)
 			}
 		}
 	}
+	
 }

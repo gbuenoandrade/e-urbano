@@ -7,7 +7,18 @@
 //
 
 import UIKit
+import Parse
 
 class HomeVC: UIViewController {
+	
+	let logInScreenSegue = "goToLogInScreen"
+	let settingsScreenSegue = "goToSettingsScreen"
+	
+	override func viewDidAppear(animated: Bool) {
+		let user = PFUser.currentUser()
+		if user == nil || !user!.isAuthenticated() {
+			self.performSegueWithIdentifier(self.logInScreenSegue, sender: nil)
+		}
+	}
 	
 }

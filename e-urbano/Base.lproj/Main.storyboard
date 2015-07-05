@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VHP-T9-p1q" kind="presentation" id="cvr-zQ-gxB"/>
+                                    <segue destination="VHP-T9-p1q" kind="presentation" identifier="goToRegisterScreen" id="cvr-zQ-gxB"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IkB-pP-6fo">
@@ -282,16 +282,72 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpPressed:" destination="VHP-T9-p1q" eventType="touchUpInside" id="TbO-yU-AlQ"/>
+                                    <segue destination="sd4-El-KiU" kind="presentation" identifier="goToSettingsScreen" id="eWi-fR-fWd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="back" id="pNw-Xk-imM"/>
+                    <connections>
+                        <segue destination="MvS-Uj-AoW" kind="presentation" identifier="goToLogInScreen" id="kGS-HM-QFT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBX-XZ-neJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696.5" y="-18.5"/>
+            <point key="canvasLocation" x="-714.5" y="131.5"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="fdd-cs-hgb">
+            <objects>
+                <viewController id="sd4-El-KiU" customClass="SettingsVC" customModule="e_urbano" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGS-Rz-SJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZB-NO-m2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c8k-fS-nHa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-yV-19w">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voh-K8-tc3">
+                                <rect key="frame" x="16" y="607" width="210" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Voltar" backgroundImage="button_bg">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed" destination="sd4-El-KiU" eventType="touchUpInside" id="CoV-T3-rqY"/>
+                                    <action selector="backPressed:" destination="VHP-T9-p1q" eventType="touchUpInside" id="9tu-h4-7z4"/>
+                                    <action selector="logInPressed:" destination="MvS-Uj-AoW" eventType="touchUpInside" id="799-e8-bKY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-DY-liH">
+                                <rect key="frame" x="95" y="20" width="185" height="86"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vF5-UX-ZR3">
+                                <rect key="frame" x="82" y="164" width="210" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Trocar de usuário" backgroundImage="button_bg">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="VHP-T9-p1q" eventType="touchUpInside" id="Gdh-UO-1tO"/>
+                                    <action selector="userChangePressed" destination="sd4-El-KiU" eventType="touchUpInside" id="RAn-if-RGx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyA-jp-SAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99.5" y="141.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SkE-VC-duv">
@@ -313,6 +369,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IlQ-V4-zt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1368" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lGG-o0-oBu">
+            <objects>
+                <viewController id="laa-bU-odj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Sw-Wm-voN"/>
+                        <viewControllerLayoutGuide type="bottom" id="GZH-21-aDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yLL-rS-xaM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Uap-YU-rtU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qbj-vi-ER7">
+                                <rect key="frame" x="95" y="20" width="185" height="86"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yx-fw-Dbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1539.5" y="-1882.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5gp-A4-Iie">
+            <objects>
+                <viewController id="tsh-rs-OEg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MKY-sQ-FPp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bu4-NU-88M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M7q-P3-WI0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="TTm-Qz-YB1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-qx-myf">
+                                <rect key="frame" x="95" y="20" width="185" height="86"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cyu-0U-x9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.5" y="-836.5"/>
         </scene>
     </scenes>
     <resources>
