@@ -21,6 +21,11 @@
 		30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */; };
 		30FDDE661B48822900FD1FF5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE651B48822900FD1FF5 /* SettingsVC.swift */; };
 		30FDDE681B48B92A00FD1FF5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE671B48B92A00FD1FF5 /* Util.swift */; };
+		30FDDE6A1B48C49B00FD1FF5 /* FindAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE691B48C49B00FD1FF5 /* FindAddressVC.swift */; };
+		30FDDE6C1B48C57D00FD1FF5 /* InsertHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE6B1B48C57D00FD1FF5 /* InsertHistoryVC.swift */; };
+		30FDDE6E1B48CC0A00FD1FF5 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE6D1B48CC0A00FD1FF5 /* MKMapViewExtension.swift */; };
+		30FDDE701B48D20E00FD1FF5 /* FindAdressAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE6F1B48D20E00FD1FF5 /* FindAdressAnnotation.swift */; };
+		30FDDE731B49C91000FD1FF5 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FDDE721B49C91000FD1FF5 /* History.swift */; };
 		A3EB1DCFBD0AE3E2F24303C1 /* Pods_e_urbano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHistoriesVC.swift; sourceTree = "<group>"; };
 		30FDDE651B48822900FD1FF5 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		30FDDE671B48B92A00FD1FF5 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		30FDDE691B48C49B00FD1FF5 /* FindAddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindAddressVC.swift; sourceTree = "<group>"; };
+		30FDDE6B1B48C57D00FD1FF5 /* InsertHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertHistoryVC.swift; sourceTree = "<group>"; };
+		30FDDE6D1B48CC0A00FD1FF5 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		30FDDE6F1B48D20E00FD1FF5 /* FindAdressAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindAdressAnnotation.swift; sourceTree = "<group>"; };
+		30FDDE721B49C91000FD1FF5 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		3ACB88466EF994C7E2069878 /* Pods-e-urbano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.debug.xcconfig"; sourceTree = "<group>"; };
 		64BDC711435E4B439F658502 /* Pods-e-urbano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-urbano.release.xcconfig"; path = "Pods/Target Support Files/Pods-e-urbano/Pods-e-urbano.release.xcconfig"; sourceTree = "<group>"; };
 		A2B36B072294ED547AC53609 /* Pods_e_urbano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_urbano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,11 +114,13 @@
 				306C8BFE1B482EC5003E955F /* AppDelegate.swift */,
 				30FDDE631B4881B200FD1FF5 /* ViewControllers */,
 				306C8C041B482EC5003E955F /* Main.storyboard */,
+				30FDDE6F1B48D20E00FD1FF5 /* FindAdressAnnotation.swift */,
 				30FDDE641B4881BE00FD1FF5 /* Model */,
 				306C8C071B482EC5003E955F /* Images.xcassets */,
 				306C8C091B482EC5003E955F /* LaunchScreen.xib */,
 				306C8BFC1B482EC5003E955F /* Supporting Files */,
 				30BBBA8D1B48313000643062 /* e-urbano-Bridging-Header.h */,
+				30FDDE6D1B48CC0A00FD1FF5 /* MKMapViewExtension.swift */,
 			);
 			path = "e-urbano";
 			sourceTree = "<group>";
@@ -142,11 +154,13 @@
 			isa = PBXGroup;
 			children = (
 				30BBBA931B483E4700643062 /* LoginVC.swift */,
+				30FDDE691B48C49B00FD1FF5 /* FindAddressVC.swift */,
 				30FDDE651B48822900FD1FF5 /* SettingsVC.swift */,
 				30FDDE5F1B487F8500FD1FF5 /* MapVC.swift */,
 				30FDDE611B487FD800FD1FF5 /* MyHistoriesVC.swift */,
 				30FDDE671B48B92A00FD1FF5 /* Util.swift */,
 				30BBBA9B1B48760D00643062 /* HomeVC.swift */,
+				30FDDE6B1B48C57D00FD1FF5 /* InsertHistoryVC.swift */,
 				30BBBA951B4849B600643062 /* RegisterVC.swift */,
 				30BBBA971B484A3000643062 /* UIViewControllerExtension.swift */,
 			);
@@ -157,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				30BBBA991B485C1B00643062 /* Database.swift */,
+				30FDDE721B49C91000FD1FF5 /* History.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -329,14 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FDDE6C1B48C57D00FD1FF5 /* InsertHistoryVC.swift in Sources */,
 				306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */,
+				30FDDE701B48D20E00FD1FF5 /* FindAdressAnnotation.swift in Sources */,
 				30BBBA981B484A3000643062 /* UIViewControllerExtension.swift in Sources */,
 				30BBBA941B483E4700643062 /* LoginVC.swift in Sources */,
 				30BBBA9C1B48760D00643062 /* HomeVC.swift in Sources */,
 				30FDDE601B487F8500FD1FF5 /* MapVC.swift in Sources */,
+				30FDDE6E1B48CC0A00FD1FF5 /* MKMapViewExtension.swift in Sources */,
 				30BBBA9A1B485C1B00643062 /* Database.swift in Sources */,
+				30FDDE731B49C91000FD1FF5 /* History.swift in Sources */,
 				30BBBA961B4849B600643062 /* RegisterVC.swift in Sources */,
 				30FDDE681B48B92A00FD1FF5 /* Util.swift in Sources */,
+				30FDDE6A1B48C49B00FD1FF5 /* FindAddressVC.swift in Sources */,
 				30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */,
 				30FDDE661B48822900FD1FF5 /* SettingsVC.swift in Sources */,
 			);

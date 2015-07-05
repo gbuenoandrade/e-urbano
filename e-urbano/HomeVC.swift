@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import MapKit
 
 class HomeVC: UIViewController {
 	
@@ -18,6 +19,12 @@ class HomeVC: UIViewController {
 		let user = PFUser.currentUser()
 		if user == nil || !user!.isAuthenticated() {
 			self.performSegueWithIdentifier(self.logInScreenSegue, sender: nil)
+		}
+		else {
+			var locationManager = CLLocationManager()
+			if CLLocationManager.authorizationStatus() != .AuthorizedWhenInUse {
+				locationManager.requestWhenInUseAuthorization()
+			}
 		}
 	}
 	
