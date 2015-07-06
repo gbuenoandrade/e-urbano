@@ -10,10 +10,12 @@
 import UIKit
 import MapKit
 
-class FindAdressVC: UIViewController {
+class FindAddressVC: UIViewController {
 
 	@IBOutlet weak var mapView: MKMapView!
 	@IBOutlet weak var addressTextField: UITextField!
+	
+	var parentVC: InsertHistoryVC?
 		
 	let regionRadiusZoom: CLLocationDistance = 800 // in meters
 	let locationManager = CLLocationManager()
@@ -62,6 +64,13 @@ class FindAdressVC: UIViewController {
 	}
 	
 	@IBAction func backPressed() {
+		if self.mapView.annotations.count > 0 {
+			if let annot = self.mapView.annotations.first as? MKAnnotation {
+				parentVC!.coordinate = annot.coordinate
+				parentVC!.changeAdressTextView(self.addressTextField.text)
+				parentVC!.addressTextView.textColor = UIColor.blackColor()
+			}
+		}
 		dismissViewControllerAnimated(true, completion: nil)
 	}
 	
@@ -110,7 +119,7 @@ class FindAdressVC: UIViewController {
 	
 }
 
-extension FindAdressVC: MKMapViewDelegate {
+extension FindAddressVC: MKMapViewDelegate {
 	
 	func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
 		if let annotation = annotation as? FindAdressAnnotation {
@@ -144,7 +153,7 @@ extension FindAdressVC: MKMapViewDelegate {
 	}
 }
 
-extension FindAdressVC: CLLocationManagerDelegate {
+extension FindAddressVC: CLLocationManagerDelegate {
 	
 	func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
 		self.mapView.centerMapOnLocation(newLocation, regionRadius: regionRadiusZoom)

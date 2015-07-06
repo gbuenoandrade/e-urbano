@@ -16,7 +16,7 @@ class LoginVC: UIViewController {
 	
 	var alreadyLoggedIn = false
 	var registerVCSegue = "goToRegisterScreen"
-	
+		
 	func setAlreadyLoggedInToTrue() {
 		alreadyLoggedIn = true
 	}
