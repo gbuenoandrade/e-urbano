@@ -14,6 +14,7 @@ class HomeVC: UIViewController {
 	
 	let logInScreenSegue = "goToLogInScreen"
 	let settingsScreenSegue = "goToSettingsScreen"
+	let locationManager = CLLocationManager()
 	
 	override func viewDidAppear(animated: Bool) {
 		let user = PFUser.currentUser()
@@ -21,7 +22,6 @@ class HomeVC: UIViewController {
 			self.performSegueWithIdentifier(self.logInScreenSegue, sender: nil)
 		}
 		else {
-			var locationManager = CLLocationManager()
 			if CLLocationManager.authorizationStatus() != .AuthorizedWhenInUse {
 				locationManager.requestWhenInUseAuthorization()
 			}
