@@ -16,7 +16,8 @@ class FindAddressVC: UIViewController {
 	@IBOutlet weak var addressTextField: UITextField!
 	
 	var parentVC: InsertHistoryVC?
-		
+	var lastPinCoordinate: CLLocationCoordinate2D?
+	
 	let regionRadiusZoom: CLLocationDistance = 800 // in meters
 	let locationManager = CLLocationManager()
 	let app = UIApplication.sharedApplication()
@@ -49,6 +50,7 @@ class FindAddressVC: UIViewController {
 		}
 		let touchPoint = gestureRecognizer.locationInView(self.mapView)
 		let touchMapCoordinate = self.mapView.convertPoint(touchPoint, toCoordinateFromView: self.mapView)
+		self.lastPinCoordinate = touchMapCoordinate
 		app.networkActivityIndicatorVisible = true
 		getPrintableAddressFromCoordinateWithCompletion(touchMapCoordinate, completition: { (printableAddress) -> Void in
 			self.app.networkActivityIndicatorVisible = false
@@ -86,6 +88,7 @@ class FindAddressVC: UIViewController {
 			}
 			else {
 				let coordinate = CLLocationCoordinate2D(latitude: localSearchResponse.boundingRegion.center.latitude, longitude: localSearchResponse.boundingRegion.center.longitude)
+				self.lastPinCoordinate = coordinate
 				self.dismissKeyboard()
 				self.getPrintableAddressFromCoordinateWithCompletion(coordinate, completition: { (printableAddress) -> Void in
 					self.addressTextField.text = printableAddress
@@ -146,6 +149,7 @@ extension FindAddressVC: MKMapViewDelegate {
 	func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, didChangeDragState newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
 		if newState == .Ending {
 			let coordinate = CLLocationCoordinate2D(latitude: view.annotation.coordinate.latitude, longitude: view.annotation.coordinate.longitude)
+			self.lastPinCoordinate = coordinate
 			self.getPrintableAddressFromCoordinateWithCompletion(coordinate, completition: { (printableAddress) -> Void in
 				self.addressTextField.text = printableAddress
 			})

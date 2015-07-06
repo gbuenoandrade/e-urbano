@@ -34,4 +34,31 @@ class Database {
 		}
 		return nil
 	}
+	
+	class func getCommentsOfHistorySynchronously(historyID: String?) -> [Comment]? {
+		if historyID == nil {
+			return nil
+		}
+		else {
+			let query = Comment.query()
+			query?.whereKey("historyID", equalTo: historyID!)
+			query?.orderByDescending("updatedAt")
+			if let objects = query?.findObjects() as? [Comment] {
+				return objects
+			}
+		}
+		return nil
+	}
+	
+	class func getHistoriesOfAuthorSynchronously(authorUsername: String?) -> [History]? {
+		if let authorUsername = authorUsername {
+			let query = History.query()
+			query?.whereKey("authorUsername", equalTo: authorUsername)
+			query?.orderByDescending("updatedAt")
+			if let objects = query?.findObjects() as? [History] {
+				return objects
+			}
+		}
+		return nil
+	}
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3046F4211B4A224000C913B3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046F4201B4A224000C913B3 /* Comment.swift */; };
 		306C8BFF1B482EC5003E955F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C8BFE1B482EC5003E955F /* AppDelegate.swift */; };
 		306C8C061B482EC5003E955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C041B482EC5003E955F /* Main.storyboard */; };
 		306C8C081B482EC5003E955F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306C8C071B482EC5003E955F /* Images.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3046F4201B4A224000C913B3 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		306C8BF91B482EC5003E955F /* e-urbano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-urbano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		306C8BFD1B482EC5003E955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306C8BFE1B482EC5003E955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				30BBBA991B485C1B00643062 /* Database.swift */,
+				3046F4201B4A224000C913B3 /* Comment.swift */,
 				30FDDE721B49C91000FD1FF5 /* History.swift */,
 			);
 			name = Model;
@@ -355,6 +358,7 @@
 				30BBBA9A1B485C1B00643062 /* Database.swift in Sources */,
 				30FDDE731B49C91000FD1FF5 /* History.swift in Sources */,
 				30BBBA961B4849B600643062 /* RegisterVC.swift in Sources */,
+				3046F4211B4A224000C913B3 /* Comment.swift in Sources */,
 				30FDDE681B48B92A00FD1FF5 /* Util.swift in Sources */,
 				30FDDE6A1B48C49B00FD1FF5 /* FindAddressVC.swift in Sources */,
 				30FDDE621B487FD800FD1FF5 /* MyHistoriesVC.swift in Sources */,

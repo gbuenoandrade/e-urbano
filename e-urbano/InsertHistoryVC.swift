@@ -71,6 +71,9 @@ class InsertHistoryVC: UIViewController {
 		if let image = self.imageView.image {
 			history.imageFile = PFFile(data: UIImagePNGRepresentation(image))
 		}
+		if let username = PFUser.currentUser()?.username {
+			history.authorUsername = username
+		}
 		Util.runClosuresOnBackgroundAndMain({ () -> Void in
 			history.authorName = Database.getNameOfCurrentUser()
 			

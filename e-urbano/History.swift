@@ -17,6 +17,7 @@ class History: PFObject {
 	@NSManaged var latitude: NSNumber?
 	@NSManaged var longitude: NSNumber?
 	@NSManaged var printableAddress: String?
+	@NSManaged var authorUsername: String?
 	
 	func getImageSynchronously() -> UIImage? {
 		if let data = imageFile?.getData() {
