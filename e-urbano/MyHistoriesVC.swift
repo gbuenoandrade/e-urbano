@@ -64,19 +64,22 @@ extension MyHistories: UITableViewDelegate, UITableViewDataSource {
 		if cell == nil {
 			cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: identifier)
 		}
-		let auxItem: (History,[Comment]?)? = historiesAndComments?[indexPath.row]
-		let history = auxItem?.0
-		let comments = auxItem?.1
-		cell!.textLabel?.text = history?.title
-		var numComments = 0
-		if comments != nil {
-			numComments = comments!.count
-		}
-		if numComments == 1 {
-			cell!.detailTextLabel?.text = "1 comentário"
-		}
-		else {
-			cell!.detailTextLabel?.text = String(numComments) + " comentários"
+		
+		if historiesAndComments != nil && historiesAndComments!.count > indexPath.row {
+			let auxItem: (History,[Comment]?)? = historiesAndComments?[indexPath.row]
+			let history = auxItem?.0
+			let comments = auxItem?.1
+			cell!.textLabel?.text = history?.title
+			var numComments = 0
+			if comments != nil {
+				numComments = comments!.count
+			}
+			if numComments == 1 {
+				cell!.detailTextLabel?.text = "1 comentário"
+			}
+			else {
+				cell!.detailTextLabel?.text = String(numComments) + " comentários"
+			}
 		}
 		
 		return cell!

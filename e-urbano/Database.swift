@@ -61,4 +61,12 @@ class Database {
 		}
 		return nil
 	}
+	
+	class func getAllHistoriesSynchronously() -> [History]? {
+		let query = History.query()
+		if let objects = query?.findObjects() as? [History] {
+			return objects
+		}
+		return nil
+	}
 }
